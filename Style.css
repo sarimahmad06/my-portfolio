@@ -92,6 +92,7 @@ nav a:hover{
 }
 #hirebtn{
     cursor: pointer;
+    text-decoration: none;
     padding: 12px 24px;
     border-radius: 8px;
     transition: 0.4s;
