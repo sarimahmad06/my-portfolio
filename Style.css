@@ -75,10 +75,18 @@ nav a:hover{
     border-radius: 8px;
     transition: 0.4s;
 }
+#hirebtn a{
+        text-decoration: none;
+        color: white;
+        transition: 0.4s;
+}
 #herobtn:hover{
     background-color: black;
     color: orange;
     
+}
+#hirebtn a:hover{
+    color: orange;
 }
 .hero-image img{
     width: 100%;
