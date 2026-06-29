@@ -92,10 +92,18 @@ nav a:hover{
 }
 #hirebtn{
     cursor: pointer;
-    text-decoration: none;
     padding: 12px 24px;
     border-radius: 8px;
     transition: 0.4s;
+
+}
+#hirebtn a{
+        text-decoration: none;
+        color: white;
+        transition: 0.4s;
+}
+#hirebtn a:hover{
+    color: orange;
 }
 #hirebtn:hover{
         background-color: black;
@@ -338,7 +346,7 @@ footer{
 .footer-contact p{
     margin-top:10px;
 }
-  .contact{
+       .contact{
 
             width:90%;
             max-width:700px;
