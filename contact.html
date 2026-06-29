@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sarim</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2 class="logo">Sarim</h2>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="index.html#projects">Projects</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="contact">
+
+<h1>Contact Me</h1>
+
+<p>Let's build something awesome together!</p>
+
+<form id="contact-form">
+
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Your Email"
+required>
+
+<input
+type="text"
+name="subject"
+placeholder="Subject"
+required>
+
+<textarea
+name="message"
+placeholder="Write your message..."
+required></textarea>
+
+<button type="submit">
+
+Send Message 
+
+</button>
+
+</form>
+
+</section>
+
+<!-- EmailJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+emailjs.init({
+    publicKey:"BrRxAEPWWj6SosJFl",
+});
+
+const form=document.getElementById("contact-form");
+
+form.addEventListener("submit",function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "Prtfolio_Contact",
+        "template_ltzjl7i",
+        this
+    )
+
+    .then(function(){
+
+        alert("✅ Message Sent Successfully!");
+
+        form.reset();
+
+    })
+
+    .catch(function(error){
+
+        alert("❌ Failed to send message.");
+
+        console.log(error);
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
