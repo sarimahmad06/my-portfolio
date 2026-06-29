@@ -1,6 +1,5 @@
 let hirebtn = document.getElementById("hirebtn");
 hirebtn.addEventListener("click" ,function  () {
- alert("Contact Page Coming Soon")
 });
 
 let herobtn = document.getElementById("herobtn");
