@@ -1,0 +1,251 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logo:hover{
+    color: orange;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: orange;
+}
+
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    display: none;
+    position:absolute;
+    top: 100%;
+    left:0%;
+    background-color: black;
+    list-style: none;
+    min-width: 150px;
+    padding: 10px;
+}
+.dropdown-menu li{
+    padding: 10px;
+
+}
+.dropdown-menu a{
+    color: white;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.projects{
+    padding: 100px 50px;
+background: white;
+display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.projects-container{
+    margin-top:10px;
+    padding: 80px 50px;
+}
+.project-card{
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 25px 30px rgba(0,0,0,0.30);
+    transition: 0.3s;
+    margin-bottom: 30px;
+    border: 2px solid transparent;
+    
+}
+.project-card:hover{
+    border-color:orange;
+   
+}
+.project-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.project-btn{
+    margin-top:15px;
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    background:black;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.project-btn:hover{
+    background:orange;
+    color:black;
+}
+.hero-text{
+    padding: 80px 50px;
+    text-align: center;
+}
+.hero-text h1{
+    font-size: 3rem;
+}
+.live-btn{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.3s;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.live-btn:hover{
+    color: black;
+    background-color: orange;
+}
+.project-info p{
+    margin-bottom: 30px;
+}
+.github-btn{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.3s;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.github-btn:hover{
+    color: black;
+    background-color: orange;
+}
+.cta{
+    text-align: center;
+    padding: 80px 20px;
+    background: #111;
+    color: white;
+    margin-top: 60px;
+}
+
+.cta h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cta p{
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.cta-btn{
+    display: inline-block;
+    padding: 12px 25px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover{
+    background: darkorange;
+    transform: translateY(-3px);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+.footer-links h3{
+    margin-bottom: 15px;
+}
+
+.footer-links ul{
+    list-style: none;
+}
+
+.footer-links li{
+    margin-bottom: 10px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-links a:hover{
+    color: orange;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.footer-logo h2{
+    margin-bottom: 10px;
+}
+
+.footer-logo h2{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer-logo h2:hover{
+    color: orange;
+}
+
+.footer-contact h3{
+    margin-bottom: 15px;
+}
+
+.footer-contact p{
+    color: #ccc;
+}
+.footer-bottom{
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+    color: #aaa;
+}
+.footer-contact p{
+    margin-top:10px;
+}
